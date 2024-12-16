@@ -24,10 +24,46 @@
     <link rel="stylesheet" href="css/magnific-popup/magnific-popup.css">
     <!-- Template Style -->
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        #loadingScreen {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            z-index: 9999;
+        }
+
+        #content {
+            display: none;
+        }
+    </style>
 </head>
 
 <body>
+<div id="loadingScreen">Loading, please wait...</div>
+    <div id="content">
+        <!-- <h1>Welcome to the website!</h1>
+        <p>This is the main content of the page.</p> -->
+    </div>
 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            // Show the loading screen for 5 seconds
+            setTimeout(function () {
+                $('#loadingScreen').fadeOut(500, function () {
+                    $('#content').fadeIn(500);
+                });
+            }, 5000);
+        });
+    </script>
     <!--=================================
     cursor -->
     <div id="cursor">
