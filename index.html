@@ -11,9 +11,8 @@
     <!-- Favicon -->
     <link rel="shortcut icon" href="./images/favicon.ico">
     <!-- Google Font -->
-    <link
-        href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Russo+One&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Russo+One&display=swap"
+          rel="stylesheet">
 
     <!-- CSS Global Compulsory (Do not remove)-->
     <link rel="stylesheet" href="css/font-awesome/all.min.css">
@@ -47,21 +46,32 @@
 </head>
 
 <body>
-<div id="loadingScreen">Loading, please wait...</div>
+    <div id="loadingScreen">Loading, please wait...</div>
     <div id="content">
-        <!-- <h1>Welcome to the website!</h1>
-        <p>This is the main content of the page.</p> -->
     </div>
-
+    
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
         $(document).ready(function () {
             // Show the loading screen for 5 seconds
             setTimeout(function () {
-                $('#loadingScreen').fadeOut(500, function () {
+                $('#loadingScreen').fadeOut(500, function() {
                     $('#content').fadeIn(500);
                 });
             }, 5000);
+            $(".team-slider").owlCarousel({
+                loop: true,
+                margin: 50,
+                nav: false,
+                dots: true,
+                responsive: {
+                    0: { items: 1 },
+                    576: { items: 2 },
+                    768: { items: 2 },
+                    992: { items: 3 },
+                    1200: { items: 4 }
+                }
+            });
         });
     </script>
     <!--=================================
@@ -1332,107 +1342,132 @@
 
                 <!--=================================
           Our Staff -->
-                <section class="space-pb bg-black z-index-2">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-xxl-6 col-lg-8">
-                                <div class="section-title mb-lg-0">
-                                    <span class="sub-title"><img class="img-fluid" src="./images/subtitle-icon.png"
-                                            alt=""> Our Staff</span>
-                                    <h2 class="title mb-0">Our team is friendly, talkative, and fully reliable.</h2>
-                                </div>
-                            </div>
-                            <div class="col-xxl-6 col-lg-4 align-self-end">
-                                <p class="mb-0 ps-xxl-5">So, make the decision to move forward. Commit your decision to
-                                    paper, just to bring it into focus. Then, go for it!</p>
-                            </div>
+          <section class="space-pb bg-black z-index-2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xxl-6 col-lg-8">
+                        <div class="section-title mb-lg-0">
+                            <span class="sub-title"><img class="img-fluid" src="./images/subtitle-icon.png" alt=""> Our Staff</span>
+                            <h2 class="title mb-0">Our team is friendly, talkative, and fully reliable.</h2>
                         </div>
-
-                        <div class="row mt-xl-5 pt-5">
-                            <div class="col-md-12">
-                                <div class="team-boxs grid-wrapper grid-xl-4 grid-lg-3 grid-md-2 grid-sm-2 grid-xs-1">
-                                    <div class="team-item team-style-1">
-                                        <div class="team-img">
-                                            <img class="img-fluid" src="./images/team/01.jpg" alt="" />
-                                            <div class="image-overlay"><img class="img-fluid"
-                                                    alt="" /></div>
-                                        </div>
-                                        <div class="team-info">
-                                            <a href="team-detail.html" class="team-title">Lav Patel</a>
-                                            <span class="team-destination">Founder</span>
-                                            <div class="team-social">
-                                                <ul>
-                                                    <li><a href="#">Fb</a></li>
-                                                    <li><a href="#">Dr</a></li>
-                                                    <li><a href="#">Tw</a></li>
-                                                    <li><a href="#">Be</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="team-item team-style-1">
-                                        <div class="team-img">
-                                            <img class="img-fluid" src="./images/team/04.jpg" alt="" />
-                                            <div class="image-overlay"><img class="img-fluid"
-                                                    alt="" /></div>
-                                        </div>
-                                        <div class="team-info">
-                                            <a href="team-detail.html" class="team-title">Abhay Mandli</a>
-                                            <span class="team-destination">Co-Founder</span>
-                                            <div class="team-social">
-                                                <ul>
-                                                    <li><a href="#">Fb</a></li>
-                                                    <li><a href="#">Dr</a></li>
-                                                    <li><a href="#">Tw</a></li>
-                                                    <li><a href="#">Be</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="team-item team-style-1">
-                                        <div class="team-img">
-                                            <img class="img-fluid" src="./images/team/04.jpg" alt="" />
-                                            <div class="image-overlay"><img class="img-fluid"
-                                                    alt="" /></div>
-                                        </div>
-                                        <div class="team-info">
-                                            <a href="team-detail.html" class="team-title">Aryan Acharya</a>
-                                            <span class="team-destination">Co-Founder</span>
-                                            <div class="team-social">
-                                                <ul>
-                                                    <li><a href="#">Fb</a></li>
-                                                    <li><a href="#">Dr</a></li>
-                                                    <li><a href="#">Tw</a></li>
-                                                    <li><a href="#">Be</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="team-item team-style-1">
-                                        <div class="team-img">
-                                            <img class="img-fluid" src="./images/team/04.jpg" alt="" />
-                                            <div class="image-overlay"><img class="img-fluid"
-                                                    alt="" /></div>
-                                        </div>
-                                        <div class="team-info">
-                                            <a href="team-detail.html" class="team-title">Nimit Desai</a>
-                                            <span class="team-destination">Co-Founder</span>
-                                            <div class="team-social">
-                                                <ul>
-                                                    <li><a href="#">Fb</a></li>
-                                                    <li><a href="#">Dr</a></li>
-                                                    <li><a href="#">Tw</a></li>
-                                                    <li><a href="#">Be</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
                     </div>
-                </section>
+                    <div class="col-xxl-6 col-lg-4 align-self-end">
+                        <p class="mb-0 ps-xxl-5">So, make the decision to move forward. Commit your decision to
+                            paper, just to bring it into focus. Then, go for it!</p>
+                    </div>
+                </div>
+        
+                <div class="row mt-xl-5 pt-5">
+                    <div class="col-md-12">
+                        <div class="owl-carousel team-slider" data-cursor-type="text" data-custom-text="Drag" data-nav-arrow="false" 
+                            data-items="4" data-lg-items="3" data-md-items="2" data-sm-items="1" data-space="50">
+                            <div class="item">
+                                <div class="team-item team-style-1">
+                                    <div class="team-img">
+                                        <img class="img-fluid" src="./images/team/01.jpg" alt="" />
+                                        <div class="image-overlay"><img class="img-fluid" alt="" /></div>
+                                    </div>
+                                    <div class="team-info">
+                                        <a href="team-detail.html" class="team-title">Lav Patel</a>
+                                        <span class="team-destination">Founder</span>
+                                        <div class="team-social">
+                                            <ul>
+                                                <li><a href="#">Fb</a></li>
+                                                <li><a href="#">Dr</a></li>
+                                                <li><a href="#">Tw</a></li>
+                                                <li><a href="#">Be</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="team-item team-style-1">
+                                    <div class="team-img">
+                                        <img class="img-fluid" src="./images/team/04.jpg" alt="" />
+                                        <div class="image-overlay"><img class="img-fluid" alt="" /></div>
+                                    </div>
+                                    <div class="team-info">
+                                        <a href="team-detail.html" class="team-title">Abhay Mandli</a>
+                                        <span class="team-destination">Co-Founder</span>
+                                        <div class="team-social">
+                                            <ul>
+                                                <li><a href="#">Fb</a></li>
+                                                <li><a href="#">Dr</a></li>
+                                                <li><a href="#">Tw</a></li>
+                                                <li><a href="#">Be</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="team-item team-style-1">
+                                    <div class="team-img">
+                                        <img class="img-fluid" src="./images/team/04.jpg" alt="" />
+                                        <div class="image-overlay"><img class="img-fluid" alt="" /></div>
+                                    </div>
+                                    <div class="team-info">
+                                        <a href="team-detail.html" class="team-title">Aryan Acharya</a>
+                                        <span class="team-destination">Co-Founder</span>
+                                        <div class="team-social">
+                                            <ul>
+                                                <li><a href="#">Fb</a></li>
+                                                <li><a href="#">Dr</a></li>
+                                                <li><a href="#">Tw</a></li>
+                                                <li><a href="#">Be</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="team-item team-style-1">
+                                    <div class="team-img">
+                                        <img class="img-fluid" src="./images/team/04.jpg" alt="" />
+                                        <div class="image-overlay"><img class="img-fluid" alt="" /></div>
+                                    </div>
+                                    <div class="team-info">
+                                        <a href="team-detail.html" class="team-title">Nimit Desai</a>
+                                        <span class="team-destination">Co-Founder</span>
+                                        <div class="team-social">
+                                            <ul>
+                                                <li><a href="#">Fb</a></li>
+                                                <li><a href="#">Dr</a></li>
+                                                <li><a href="#">Tw</a></li>
+                                                <li><a href="#">Be</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="team-item team-style-1">
+                                    <div class="team-img">
+                                        <img class="img-fluid" src="./images/team/04.jpg" alt="" />
+                                        <div class="image-overlay"><img class="img-fluid" alt="" /></div>
+                                    </div>
+                                    <div class="team-info">
+                                        <a href="team-detail.html" class="team-title">Nimit Desai</a>
+                                        <span class="team-destination">Co-Founder</span>
+                                        <div class="team-social">
+                                            <ul>
+                                                <li><a href="#">Fb</a></li>
+                                                <li><a href="#">Dr</a></li>
+                                                <li><a href="#">Tw</a></li>
+                                                <li><a href="#">Be</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+            </div>
+        </section>
+        
                 <!--=================================
           Our Staff -->
 
